@@ -1,5 +1,6 @@
 // src/components/TodoList.tsx
 import React, { useState } from "react";
+import TodoItem from "./TodoItem";
 
 import { Item } from "../model"; // we need to import the type
 
@@ -20,5 +21,16 @@ export default function TodoList() {
     },
   ]);
 
-  return <p>TODO: make the TODO app</p>;
+  const toggle = (id: number) => {
+    // TODO implement. Tip: use map
+  };
+
+  return <div></div>;
 }
+
+//  <p>
+//         {list.map((item) => {
+//           return <TodoItem />;
+//         })}
+//       </p>
+//       <TodoItem key={item.id} item={item} toggleDone={() => toggle(id)} />
