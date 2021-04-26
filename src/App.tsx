@@ -24,6 +24,14 @@ const App: FC = () => {
     setDeadline(0);
   };
 
+  const completeTask = (taskNameToDelete: string): void => {
+    setTodoList(
+      todoList.filter((task) => {
+        return task.taskName != taskNameToDelete;
+      })
+    );
+  };
+
   return (
     <div className="App">
       <div className="header">
